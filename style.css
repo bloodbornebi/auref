@@ -160,7 +160,11 @@ div.cbox {
 
 .slim {
     padding: .5% !important;
-    font-size: 5pt !important;
+}
+
+.event {
+    margin: -1em 0em !important;
+    font-weight: lighter;
 }
 
 .contents {
