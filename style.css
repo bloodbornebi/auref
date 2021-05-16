@@ -150,6 +150,7 @@ div.cbox {
     font-weight: bolder;
     padding: 1%;
     margin-right: .5em;
+    font-family: 'Fira Sans';
 }
 
 .block {
@@ -164,7 +165,8 @@ div.cbox {
 
 .event {
     margin: -1em 0em !important;
-    font-weight: lighter;
+    font-weight: 100;
+    font-size: initial;
 }
 
 .contents {
