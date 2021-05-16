@@ -137,8 +137,9 @@ div.bar {
 }
 
 div.cbox {
-    width: 69%;
+    width: 68%;
     float: right;
+    padding-right: 1%;
 }
 
 .button {
@@ -159,14 +160,15 @@ div.cbox {
     width: 50%;
 }
 
-.slim {
-    padding: .5% !important;
-}
-
 .event {
     margin: -1em 0em !important;
     font-weight: 100;
     font-size: initial;
+}
+
+.filters {
+    align-items: center;
+    text-align: center;
 }
 
 .contents {
@@ -230,3 +232,10 @@ ol.contents li a, .hide, .button {
     display: initial;
 }
 
+.slim {
+    padding: .5% !important;
+}
+ 
+.todo {
+    font-style: italic;
+}
