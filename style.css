@@ -1,0 +1,225 @@
+:root {
+    --text: black;
+    --background: white;
+    --accent: black;
+    --link: blue;
+    --soft: gray;
+    --pop: green;
+    --c1: black;
+    --c2: black;
+    --c3: black;
+    --c4: black;
+    --c5: black;
+    --c6: black;
+    --box: lightgray;
+
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Alegreya Sans', 'Fira Sans', 'Helvetica', 'Cambria', sans-serif;
+}
+
+.solarized {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+
+    --text: var(--base01);
+    --soft: var(--base00);
+    --background: var(--base3);
+    --link: var(--cyan);
+    --pop: var(--green);
+    --c1: var(--yellow);
+    --c2: var(--orange);
+    --c3: var(--red);
+    --c4: var(--magenta);
+    --c5: var(--violet);
+    --c6: var(--base02);
+    --accent: var(--blue);
+    --box: var(--base2);
+}
+
+.nord {
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+
+    --text: var(--nord0);
+    --soft: var(--nord3);
+    --background: var(--nord6);
+    --link: var(--nord10);
+    --pop: var(--nord7);
+    --c1: var(--nord11);
+    --c2: var(--nord12);
+    --c3: var(--nord13);
+    --c4: var(--nord14);
+    --c5: var(--nord8);
+    --c6: var(--nord15);
+    --accent: var(--nord9);
+    --box: var(--nord5);
+}
+
+body {
+    counter-reset: section;
+    font-size: 100%;
+}
+
+h1 {
+    color: var(--c1);
+    text-align: center;
+}
+
+h2 {
+    color: var(--c2);
+}
+
+h3 {
+    color: var(--c3);
+}
+
+h4 {
+    color: var(--c4);
+}
+
+h5 {
+    color: var(--c5);
+}
+
+h6 {
+    color: var(--c6);
+}
+
+p {
+    background-color: inherit;
+}
+
+a {
+    color: var(--link);
+}
+
+a[target="_blank"] > div {
+    background-color: var(--link);
+}
+
+strong {
+    color: var(--accent);
+}
+
+div.bar {
+    width: 29%;
+    float: left;
+    position: fixed;
+}
+
+div.cbox {
+    width: 69%;
+    float: right;
+}
+
+.button {
+    background-color: var(--pop);
+    display: inline-block;
+    text-align: center;
+    font-size: larger;
+    color: var(--background);
+    font-weight: bolder;
+    padding: 1%;
+    margin-right: .5em;
+}
+
+.block {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.slim {
+    padding: .5% !important;
+}
+
+.contents {
+    counter-reset: toc;
+    list-style: none;
+    font-size: 115%;
+}
+
+ol.contents li {
+    color: var(--soft);
+}
+
+ol.contents li a, .hide, .button {
+    text-decoration-line: none;
+}
+
+.content {
+    padding: 0em 1em;
+}
+
+.fic {
+    padding: 0em .5em .5em .5em;
+    margin-right: 10%;
+}
+
+.fic .content {
+    display: none;
+}
+
+.fic:hover {
+    background-color: var(--box);
+}
+
+.fic:hover .content {
+    display: initial;
+}
+
+.fic > h3 {
+    display: block;
+    padding-top: .25em;
+}
+
+.highlight > h2 {
+    color: var(--accent);
+}
+
+.highlight > *.pseudolink {
+    color: var(--c4) !important;
+}
+
+.pseudolink {
+    color: var(--soft);
+    font-weight: bolder;
+}
+
+.series {
+    display: none;
+}
+
+.series:target {
+    display: initial;
+}
+

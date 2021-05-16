@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en" class="solarized" id="main">
+	<head>
+		<title>AU Reference</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+SC&family=Alegreya+Sans&family=Alegreya+Sans+SC&family=Fira+Code&family=Fira+Mono&family=Fira+Sans&family=Fira+Sans+Condensed&family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="jquery.onscreen.min.js"></script>
+		<script src="script.js"></script>
+		<script src="query.js"></script>
+	</head>
+	
+	<body onload="main();">
+		<h1>Fic meta reference guide</h1>
+		
+		<div class="bar">
+			<div class="button block" onclick="showTypeFic('series');">Reveal all</div>
+			
+			<div style="align-items: center; text-align: center;">
+				<p>
+					<div class="button" onclick="showTypeFic('tpb');" style="background-color: var(--c1);">TPB</div>
+					<div class="button" onclick="showTypeFic('tnp');" style="background-color: var(--c2);">TNP</div>
+					<div class="button" onclick="showTypeFic('po3');" style="background-color: var(--c3);">PO3</div>
+					<div class="button" onclick="showTypeFic('oots');" style="background-color: var(--c4);">OOTS</div>
+					<div class="button" onclick="showTypeFic('avos');" style="background-color: var(--c6);">AVOS</div>
+				</p>
+				<p>
+					<div class="button" onclick="showTypeFic('oneshot');" style="background-color: var(--c1);">One-shots</div>
+					<div class="button" onclick="showTypeFic('lore');" style="background-color: var(--c2);">Lore</div>
+					<div class="button" onclick="showTypeFic('jfs');" style="background-color: var(--c3);">Justice for Squirrelflight</div>
+				</p>
+				<p>
+					<div onclick="showTypeFic('candiv');" style="background-color: var(--c1);" class="button">Canon divergence</div>
+				</p>
+			</div>
+			
+			<ul class="contents">
+				<li onclick="showFic('ctd');" class="ctd"><span class="pseudolink">Cloudtail's Daughter</span></li>
+				<li onclick="showFic('ted');" class="ted"><span class="pseudolink">the elders' den</span></li>
+				<li onclick="showFic('fcaid');" class="fcaid"><span class="pseudolink">five clans alike in dignity</span></li>
+				<li onclick="showFic('tgatw');" class="tgatw"><span class="pseudolink">the gorse and the wind</span></li>
+				<li onclick="showFic('hitds');" class="hitds"><span class="pseudolink">here is the deepest secret nobody knows</span></li>
+				<li onclick="showFic('hc');" class="hc"><span class="pseudolink">homecalling</span></li>
+				<li onclick="showFic('ashes');" class="ashes"><span class="pseudolink">love will not break your heart (but dismiss your fears)</span></li>
+				<li onclick="showFic('stolag');" class="stolag"><span class="pseudolink">saccharine tithes of love and glory</span></li>
+				<li onclick="showFic('mtbnsof');" class="mtbnsof"><span class="pseudolink">the sun goes crooked (that is night)</span></li>
+				<li onclick="showFic('vp');" class="vp"><span class="pseudolink">vanishing point</span></li>
+				<li onclick="showFic('wfmisus');" class="wfmisus"><span class="pseudolink">waiting for me in some unholy sunlight</span></li>
+			</ul>
+			<div class="button block" onclick="hideFics();">Clear</div> 
+			<p></p>
+			<div class="button block" onclick="changeColorScheme();">Change color scheme</div>
+		</div>
+		
+		<div class="cbox">
+			<p id="cover">Click a series title, or a button for all fics of a certain type. ("TPB" will also load all pre-canon fics.) Links that open in a new window are <span style="color: var(--link)">colored differently</span>. Hit the clear button to hide all fics, and try out some color schemes.</p>
+
+			<p>Note that clicking a title will not scroll to it, so if you have a lot open, you may find you can't see it. Just scroll. Consider the list highlights a "you-are-here"; while one-shots are not directly listed in it, they're still inserted in alphabetical order.</p>
+
+			<p style="font-style: italic;">
+				TODO: Reinstate the anchors so that clicking a series title scrolls to it if it is not available.<br />
+				TODO: Mobile site.<br />
+				TODO: A calm mode where everything is revealed.<br />
+				TODO: Direct link to WHP.<br />
+				BUG: List highlights don't always open/scroll correctly.
+			</p>
+
+			<section class="series oots candiv" id="ctd">
+				<h2 id="protect">Cloudtail's Daughter</h2> 
+			</section>
+			
+			<section class="series lore" id="ted">
+				<h2>the elders' den</h2>
+			</section>
+
+			<section class="series avos oneshot" id="fitn">
+				<h2>fair is the night</h2>
+
+				<section class="fic">
+					<h3>fair is the night</h3>
+
+					<div class="content" style="padding: 1em;">
+						<a href="https://archiveofourown.org/works/31266944" target="_blank" class="hide">
+							<div class="button slim">
+								AO3
+							</div>
+						</a>
+						<p>
+							<ul>
+								<li><strong>Rating</strong> &mdash; General audiances</li>
+								<li><strong>Characters</strong> &mdash; Ivypool, Dovewing, Tigerheart</li>
+								<li><strong>Ships</strong></li>
+								<li><strong>Summary</strong></li>
+							</ul>
+						</p>
+					</div>
+				</section>
+			</section>
+			
+			<section class="series lore" id="fcaid">
+				<h2>five clans alike in dignity</h2>
+			</section>
+			
+			<section class="series tpb candiv" id="tgatw">
+				<h2>the gorse and the wind</h2>
+			</section>
+			
+			<section class="series tpb candiv" id="hitds">
+				<h2>here is the deepest secret nobody knows</h2>
+			</section>
+			
+			<section class="series candiv tnp jfs" id="hc">
+				<h2>homecalling</h2>
+			</section>
+			
+			<section class="series po3 candiv jfs" id="ashes">
+				<h2>love will not break your heart (but dismiss your  fears)</h2>
+				<section class="fic">
+					<h3>ashes</h3>
+					<div class="content">
+						<a href="https://archiveofourown.org/works/30314472/chapters/74720817" target="_blank" class="hide">
+							<div class="button slim">AO3</div>
+						</a>
+						<a href="https://mallowstep.tumblr.com/tagged/ashes" target="_blank" class="hide">
+							<div class="button slim">Tag</div>
+						</a>
+						<a href="https://www.notion.so/30eed07170e944ab924faeff47d15532?v=b8afc29947e94a23b1557340837c1509" target="_blank" class="hide">
+							<div class="button slim">Art</div>
+						</a>
+					</div>
+				</section>
+			</section>
+			
+			<section class="series tpb" id="stolag">
+				<h2>saccharine tithes of love and glory</h2>
+			</section>
+			
+			<section class="series candiv jfs" id="mtbnsof">
+				<h2>the sun goes crooked (that is night)</h2>
+				
+				<section class="fic">
+					<h3>may there be no sadness of fairwell</h3>
+					<div class="content" style="padding: 1em;">
+						<a href="https://archiveofourown.org/works/30377202" target="_blank" class="hide"><div class="button slim">AO3</div></a>
+						<a href="https://mallowstep.tumblr.com/tagged/mtbnsof" target="_blank" class="hide"><div class="button slim">Tag</div></a>
+					</div>
+				</section>
+			</section>
+
+			<section class="series candiv tpb oneshot" id="tswsotbou">
+				<h2>the sun won't shine on the both of us</h2>
+				<section class="fic">
+					<h3>the sun won't shine on the both of us</h3>
+					<div class="content">
+					</div>
+				</section>
+			</section>
+			
+			<section class="series" id="vp">
+				<h2>vanishing point</h2>
+			</section>
+			
+			<section class="series candiv tnp jfs" id="wfmisus">
+				<h2>waiting for me in some unholy sunlight</h2>
+			</section>
+		</div>
+	</body>
+</html>
+	
